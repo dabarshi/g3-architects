@@ -47,6 +47,7 @@
 }
 
 /* buttons styles  */
+
 .btn-small {
     padding: 16px 25px;
     font-size: 20px;
@@ -57,8 +58,6 @@
     position: relative;
     bottom: 50px;
     right: 30px;
-
-
 }
 .years {
     font-size: 65px;
@@ -150,6 +149,13 @@
     gap: 30px;
     width: 50%;
 }
+.style-text-thin {
+    color: var(--dark-03);
+    font-weight: 400;
+}
+.style-text-bold {
+    color: var(--orange);
+}
 
 /* features-section styles */
 .features-section{
@@ -205,6 +211,11 @@
     padding: 50px;
     border-radius: 8px;
     border: 2px solid var(--orange);
+    transition: all 0.3s ease;
+}
+
+.fact :hover {
+    height: 200px;
 }
 
 /* sponsors-section styles */
@@ -230,4 +241,84 @@
     max-width: 1200px;
     padding: 20px;
     margin: 50px auto;
+}
+/* What we do section styles */
+.what-we-do-section {
+    margin: 50px auto;
+}
+.what-we-do-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.what-we-do {
+    display: flex;
+    gap: 30px;
+}
+.what-we-do-left{
+    width: 50%;
+    text-align: right;
+}
+.divider {
+    width: 1px;
+    background-color: var(--dark-02);
+}
+.what-we-do-right{
+    width: 50%;
+    text-align: left;
+}
+
+ /* Mobile responsive styles  */
+
+@media only screen and (max-width: 600px) {
+    .nav-bar {
+        display: block;
+        align-items: center;
+    }
+    .nav-title,
+    .items,
+    .more-features,
+    .features-section-right,
+    .our-facts-section  {
+        text-align: center;
+    }
+    .items {
+        display: block;
+    }
+    .quick-list-section{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .quick-list-gellary{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .features-section, 
+    .facts,
+    .sponsors{
+        flex-direction: column;
+    }
+    .features-section-left,
+    .features-section-right {
+        width: 100%;
+    }
+    .features-title {
+        margin: 0 auto;
+    }
+    .btn-large {
+        position: static;
+    }
+    .years {
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .facts {
+        align-items: center;
+        row-gap: 20px;
+    }
+    .sponsors {
+        row-gap: 20px;
+    }
+    .sponsor img {
+        width: auto;
+    }
+    
 }
