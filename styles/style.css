@@ -28,6 +28,17 @@
     padding: 45px;
 }
 
+.section-title {
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--dark-01);
+}
+
+.description {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .btn-primary {
     background-color: var(--orange);
     color: var(--white);
@@ -35,12 +46,23 @@
     border: none;
 }
 
+/* buttons styles  */
 .btn-small {
     padding: 16px 25px;
     font-size: 20px;
 }
 .btn-large {
     padding: 45px 40px;
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+    right: 30px;
+
+
+}
+.years {
+    font-size: 65px;
+    font-weight: 700;
 }
 
 
@@ -76,6 +98,8 @@
 }
 
 /* banner styles */
+
+
 .banner,
 .banner-text {
     display: flex;
@@ -103,3 +127,107 @@
     width: 100%;
 }
 
+/* quick list section styles  */
+.quick-list-section{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.quick-list-gellary{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.quick-list-gellary img {
+    width: 100%;
+}
+.quick-list-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 50%;
+}
+
+/* features-section styles */
+.features-section{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.features-section-left {
+    width: 50%;
+}
+
+.feature-title-box {
+    display: flex;
+    gap: 10px;
+}
+.line {
+    width: 3px;
+    background-color: var(--orange);
+    
+}
+.more-features{
+    padding: 10px;
+}
+
+/* .feature-image {
+    width: 50%;
+} */
+.feature-image img {
+    width: 100%;
+}
+.features-section-right {
+    width: 50%;
+}
+/* our-facts-section styles */
+.our-facts-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.facts {
+    display: flex;
+    justify-content: space-around;
+}
+.fact {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-radius: 8px;
+    border: 2px solid var(--orange);
+}
+
+/* sponsors-section styles */
+.sponsors-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+}
+.sponsors {
+    display: flex;
+    justify-content: space-around;
+}
+.sponsor img {
+    filter: brightness(0);
+    width: 100%;
+}
+
+.footer {
+    text-align: center;
+    background: rgba(255, 144, 14, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 50px auto;
+}
