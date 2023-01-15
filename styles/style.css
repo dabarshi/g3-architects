@@ -211,11 +211,11 @@
     padding: 50px;
     border-radius: 8px;
     border: 2px solid var(--orange);
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .fact :hover {
-    height: 200px;
+    transform: scale(.5);
 }
 
 /* sponsors-section styles */
@@ -224,6 +224,7 @@
     flex-direction: column;
     text-align: center;
     gap: 30px;
+    margin: 50px auto;
 }
 .sponsors {
     display: flex;
@@ -234,15 +235,10 @@
     width: 100%;
 }
 
-.footer {
-    text-align: center;
-    background: rgba(255, 144, 14, 0.1);
-    width: 100%;
-    max-width: 1200px;
-    padding: 20px;
-    margin: 50px auto;
-}
+
 /* What we do section styles */
+
+
 .what-we-do-section {
     margin: 50px auto;
 }
@@ -265,6 +261,18 @@
 .what-we-do-right{
     width: 50%;
     text-align: left;
+}
+
+
+/* footer styles  */
+
+.footer {
+    text-align: center;
+    background: rgba(255, 144, 14, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 50px auto;
 }
 
  /* Mobile responsive styles  */
